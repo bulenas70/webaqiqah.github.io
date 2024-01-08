@@ -1,0 +1,267 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: darkgrey;
+  color: #222;
+  gap: 10px;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  gap: 6px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  margin-left: 8px;
+}
+
+.logo-title {
+  
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.5 ease 0s;
+  -webkit-transition: all 0.5 ease 0s;
+  -moz-transition: all 0.5 ease 0s;
+  -ms-transition: all 0.5 ease 0s;
+  -o-transition: all 0.5 ease 0s;
+}
+
+.logo:hover {
+  color: green;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+.btn {
+  margin-right: 10px;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  background: dodgerblue;
+  color: #333;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+  background: green;
+  color: #f7f7f7;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li a {
+  transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -ms-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  display: inline-block;
+}
+
+li a:hover {
+  color: green;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-family: consolas;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.parallax {
+  background-image: url('assets/kambing.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* .card-item {
+  display: flex;
+  text-align: center;
+  width: 25%;
+  background: #f7f7f7;
+  color: #222;
+  padding: 24px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 5);
+} */
+
+
+.icon-1 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-2 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-3 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-4 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-5 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-6{
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.icon-7 {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: darkgrey;
+  color: black;
+}
+
+@media  screen and (max-width: 500px) {
+  .logo {
+    margin-top: 10px;
+  }
+
+  .logo-img {
+    margin-top: 8px;
+  }
+
+
+  .card {
+    flex-direction: column;
+    gap: 0;
+  }
+/* 
+  .card-item {
+    width: 100%;
+    opacity: 0.9;
+  } */
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro {
+    margin-top: 20px;
+  }
+
+  .img-foto {
+    padding: 0;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: darkgrey;
+    z-index: 9;
+  }
+
+  footer {
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+}
